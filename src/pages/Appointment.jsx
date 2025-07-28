@@ -3,7 +3,7 @@ import { AppContext } from "../context/AppContext";
 import { useParams } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useTranslation } from "react-i18next";
-import RelatedDoctors from "../components/relatedDoctors";
+import RelatedDoctors from "../components/RelatedDoctors";
 
 const Appointment = () => {
   const { doctors } = useContext(AppContext);
