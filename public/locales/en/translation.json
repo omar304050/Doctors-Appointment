@@ -1,0 +1,64 @@
+{
+  "welcome": "Welcome",
+  "login": "Login",
+  "HOME" : "HOME",
+  "ALL DOCTORS" : "ALL DOCTORS",
+  "ABOUT" : "ABOUT",
+  "CONTACT" : "CONTACT",
+  "My Profile" : "My Profile",
+  "My Appointments" : "My Appointments",
+  "Logout" : "Logout",
+  "Creat Account" : "Creat Account" , 
+  "Book Appointment" : "Book Appointment",
+  "With Trusted Doctors" : "With Trusted Doctors",
+  "Simply browse through our extensive list of trusted doctors" : "Simply browse through our extensive list of trusted doctors",
+  "schedule your appointment hassle-free":"schedule your appointment hassle-free" , 
+  "Book appointment" : "Book appointment",
+  "Find by Speciality" : "Find by Speciality",
+  "Simply browse through our extensive list of trusted doctors, schedule your appointment hassle-free." : "Simply browse through our extensive list of trusted doctors, schedul your appointment hassle-free." ,
+  
+    "specialities": {
+    "general_physician": "General Physician",
+    "gynecologist": "Gynecologist",
+    "dermatologist": "Dermatologist",
+    "pediatricians": "Pediatricians",
+    "neurologist": "Neurologist",
+    "gastroenterologist": "Gastroenterologist"
+  },
+
+  "Available" : "Available" , 
+  
+   "experience": {
+    "1_year": "1 Year",
+    "2_years": "2 Years",
+    "3_years": "3 Years",
+    "4_years": "4 Years"
+  },
+  "about": {
+    "general": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies."
+  },
+  "address": {
+    "17_cross_richmond": "17th Cross, Richmond",
+    "27_cross_richmond": "27th Cross, Richmond",
+    "37_cross_richmond": "37th Cross, Richmond",
+    "47_cross_richmond": "47th Cross, Richmond",
+    "57_cross_richmond": "57th Cross, Richmond",
+    "circle_ring_london": "Circle, Ring Road, London"
+  },
+
+  
+   "more" : "more" ,
+    
+    "With 100+ Trusted Doctors" : "With 100+ Trusted Doctors",
+      
+    "Top Doctors to Book" : "Top Doctors to Book" ,
+
+   
+  "Simply browse through our extensive list of trusted doctors." : "Simply browse through our extensive list of trusted doctors.",
+
+
+    "Browse through the doctors specialist." : "Browse through the doctors specialist."
+  
+  
+  
+} 

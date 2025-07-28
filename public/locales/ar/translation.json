@@ -1,0 +1,63 @@
+{
+  "welcome": "أهلاً بك",
+  "login": "تسجيل الدخول",
+  "HOME": "الرئيسية",
+  "ALL DOCTORS": "كل الأطباء",
+  "ABOUT": "من نحن",
+  "CONTACT": "تواصل معنا",
+  "My Profile": "ملفي الشخصي",
+  "My Appointments": "مواعيدي",
+  "Logout": "تسجيل الخروج",
+  "Creat Account": "إنشاء حساب",
+  "Book Appointment" : "احجز موعد",
+  "With Trusted Doctors" : "مع أطباء موثوقين",
+  "Simply browse through our extensive list of trusted doctors" : "تصفح ببساطة قائمتنا الواسعة من الأطباء الموثوقين",
+  "schedule your appointment hassle-free" : "احجز موعدك بكل سهولة دون أي عناء",
+  "Book appointment" : "احجز موعد",
+  "Find by Speciality": "ابحث حسب التخصص",
+  "Simply browse through our extensive list of trusted doctors, schedule your appointment hassle-free.": "تصفح بكل سهولة قائمتنا الواسعة من الأطباء الموثوقين، وحدد موعدك بدون أي تعقيد.",
+
+
+  "specialities": {
+    "general_physician": "طبيب عام",
+    "gynecologist": "طبيبة نساء",
+    "dermatologist": "طبيب جلدية",
+    "pediatricians": "طبيب أطفال",
+    "neurologist": "طبيب أعصاب",
+    "gastroenterologist": "طبيب جهاز هضمي"
+  } ,
+
+
+  "Available" : "متاح" ,
+
+   "experience": {
+    "1_year": "سنة واحدة",
+    "2_years": "سنتان",
+    "3_years": "3 سنوات",
+    "4_years": "4 سنوات"
+  },
+  "about": {
+    "general": "يتمتع الدكتور بالتزام قوي بتقديم رعاية طبية شاملة، مع التركيز على الطب الوقائي والتشخيص المبكر واستراتيجيات العلاج الفعالة."
+  },
+  "address": {
+    "17_cross_richmond": "شارع 17، ريتشموند",
+    "27_cross_richmond": "شارع 27، ريتشموند",
+    "37_cross_richmond": "شارع 37، ريتشموند",
+    "47_cross_richmond": "شارع 47، ريتشموند",
+    "57_cross_richmond": "شارع 57، ريتشموند",
+    "circle_ring_london": "دائرة، طريق الحزام، لندن"
+  },
+
+ "more" : "ألمزيد" , 
+ "With 100+ Trusted Doctors" : "مع اكتر من 100 دكتور موثوق" ,
+
+  "Top Doctors to Book": "أفضل الأطباء المتاحين للحجز",
+  "Simply browse through our extensive list of trusted doctors.": "تصفّح بكل بساطة قائمتنا الواسعة من الأطباء الموثوقين",
+
+
+   "Browse through the doctors specialist." : "تصفّح التخصصات الطبية" 
+
+
+  
+  
+}
