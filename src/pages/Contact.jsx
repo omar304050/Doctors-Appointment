@@ -1,9 +1,17 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div className="flex flex-col  items-center gap-10">
+            <Helmet>
+              <title>Contact</title>
+              <meta
+                name="description"
+                content="Welcome to the home page of My Website."
+              />
+            </Helmet>
       <h1 className="py-6 text-gray-500 text-2xl  ">CONTACT <span className="text-gray-600 font-semibold">US</span></h1>
 
       <div className="flex flex-col md:flex-row items-start md:items-center md:justify-center gap-8" >

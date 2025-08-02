@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 const Doctors = () => {
   const { t } = useTranslation();
   const { speciality } = useParams();
@@ -32,6 +33,13 @@ const Doctors = () => {
 
   return (
     <div className="flex flex-col items-start gap-2 ">
+      <Helmet>
+        <title>Doctors</title>
+        <meta
+          name="description"
+          content="Welcome to the home page of My Website."
+        />
+      </Helmet>
       <p className="bg-primary text-white md:inline-block p-2 rounded-lg max-w-[300px] hidden ">
         {t("Browse through the doctors specialist.")}
       </p>
@@ -45,28 +53,29 @@ const Doctors = () => {
       </button>
 
       <div className="flex flex-col sm:flex-row  gap-5 mt-5 ">
-      <div
-  className={`w-full sm:w-[300px] ${Fliter ? "flex" : "hidden"} md:flex flex-col space-y-4 text-sm text-gray-600`}
->
-  {SpecialtiData.map((key) => (
-    <p
-      key={key}
-      onClick={() =>
-        speciality === `specialities.${key}`
-          ? navgate("/doctors")
-          : navgate(`/doctor/specialities.${key}`)
-      }
-      className={`w-full pl-3 py-2 pr-6 border border-gray-300 rounded-lg shadow-sm transition-all cursor-pointer hover:bg-indigo-50 hover:text-black ${
-        speciality === `specialities.${key}`
-          ? "bg-indigo-100 text-black"
-          : ""
-      }`}
-    >
-      {t(`specialities.${key}`)}
-    </p>
-  ))}
-</div>
-
+        <div
+          className={`w-full sm:w-[300px] ${
+            Fliter ? "flex" : "hidden"
+          } md:flex flex-col space-y-4 text-sm text-gray-600`}
+        >
+          {SpecialtiData.map((key) => (
+            <p
+              key={key}
+              onClick={() =>
+                speciality === `specialities.${key}`
+                  ? navgate("/doctors")
+                  : navgate(`/doctor/specialities.${key}`)
+              }
+              className={`w-full pl-3 py-2 pr-6 border border-gray-300 rounded-lg shadow-sm transition-all cursor-pointer hover:bg-indigo-50 hover:text-black ${
+                speciality === `specialities.${key}`
+                  ? "bg-indigo-100 text-black"
+                  : ""
+              }`}
+            >
+              {t(`specialities.${key}`)}
+            </p>
+          ))}
+        </div>
 
         <div className=" w-full gap-4 pt-5 gap-y-6 px-3  sm:px-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
           {filterData.map((item, index) => (

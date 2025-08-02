@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { assets } from "../assets/assets";
 import { AuthContext } from "../context/AuthContext";
+import { Helmet } from "react-helmet";
 const Myprofile = () => {
  const{isLogged} = useContext(AuthContext)
   const LoginData = JSON.parse(localStorage.getItem("userData"))
@@ -23,6 +24,13 @@ const Myprofile = () => {
   const [isEdit, setIsEdit] = useState(false);
   return (
     <div className="flex flex-col gap-2 ">
+            <Helmet>
+        <title>MyProfile</title>
+        <meta
+          name="description"
+          content="Welcome to the home page of My Website."
+        />
+      </Helmet>
       <img className="w-36 rounded-lg" src={userData.image} alt="" />
 
       {isEdit ? (

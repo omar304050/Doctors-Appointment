@@ -1,6 +1,7 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const { t } = useTranslation();
@@ -21,6 +22,13 @@ const About = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>About</title>
+        <meta
+          name="description"
+          content="Welcome to the home page of My Website."
+        />
+      </Helmet>
       <div className="flex flex-col items-center">
         <p className="text-2xl md:3xl lg:4xl font-medium py-8 text-gray-400 ">
           ABOUT <span className="text-black font-bold">US</span>
