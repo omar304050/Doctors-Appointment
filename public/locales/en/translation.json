@@ -57,8 +57,48 @@
   "Simply browse through our extensive list of trusted doctors." : "Simply browse through our extensive list of trusted doctors.",
 
 
-    "Browse through the doctors specialist." : "Browse through the doctors specialist."
+    "Browse through the doctors specialist." : "Browse through the doctors specialist.",
+
+
+  "pHero1": "Welcome to Prescripto, your trusted partner in managing your healthcare needs conveniently and efficiently. At Prescripto, we understand the challenges individuals face when scheduling doctor appointments and managing their health records.",
+  "pHero2": "Welcome to Prescripto, your trusted partner in managing your healthcare needs conveniently and efficiently. At Prescripto, we understand the challenges individuals face when scheduling doctor appointments and managing their health records.",
+  "pHero3": "Welcome to Prescripto, your trusted partner in managing your healthcare needs conveniently and efficiently. At Prescripto, we understand the challenges individuals face when scheduling doctor appointments and managing their health records." ,
+
+
+     "Our Vision" : "Our Vision" , 
+     "WHY" : "WHY", 
+     "CHOOSE US" : "CHOOSE US" ,
   
-  
-  
+    
+     "aboutSection" : {
+        "EFFICIENCY" : "EFFICIENCY :" ,
+        "p1": "Streamlined appointment scheduling that fits into your busy lifestyle." , 
+
+        "CONVENIENCE" : "CONVENIENCE :" , 
+        "p2" : "Access to a network of trusted healthcare professionals in your area." ,
+     
+        "PERSONALIZATION" : "PERSONALIZATION :" ,
+        "p3" : "Tailored recommendations and reminders to help you stay on top of your health."
+      
+     },
+
+
+     "Please sign up to book an appointment" : "Please sign up to book an appointment",
+     "Full Name" : "Full Name" ,
+     "Email" : "Email" ,
+     "Password" : "Password",
+     "Phone" : "Phone",
+     " Already have an account?" : "Already have an account?",
+     "Sign Up" : "Sign Up" ,
+     "Login here" : "Login here" , 
+     "Log In" : "Log In" , 
+     "Create an new account?" : "Create an new account?" ,
+     " Click here" : "Click here" ,
+     "Please log in to book an appointment" : "Please log in to book an appointment" ,
+     "Enter your full name" : "Enter your full name" ,
+     "Enter your email" : "Enter your email" ,
+     "Enter your password" : "Enter your password" ,
+     "Enter your phone" : "Enter your phone"
+      
+     
 } 

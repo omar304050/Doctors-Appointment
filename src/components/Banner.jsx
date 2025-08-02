@@ -19,8 +19,8 @@ const Banner = () => {
 
         {/* الزر */}
         <div className="w-full flex justify-center md:justify-start">
-          <button onClick={()=>{navgate('/login'); scrollTo(0,0) }} className="bg-white rounded-full text-gray-700 px-6 py-3 sm:px-8 sm:py-4 mt-4 text-sm sm:text-base font-medium shadow hover:shadow-md  hover:scale-105 transition-all ">
-            Create Accountn
+          <button onClick={()=>{navgate('/singup'); scrollTo(0,0) }} className="bg-white rounded-full text-gray-700 px-6 py-3 sm:px-8 sm:py-4 mt-4 text-sm sm:text-base font-medium shadow hover:shadow-md  hover:scale-105 transition-all ">
+            {t("Creat Account")}
           </button>
         </div>
       </div>

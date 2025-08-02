@@ -4,10 +4,13 @@ import "./index.css";
 import "./i18n";
 import { BrowserRouter } from "react-router-dom";
 import AppContextProvider from "./context/AppContext.jsx";
+import { AuthProvider } from "./context/AuthContext";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <AppContextProvider>
-      <App />
-    </AppContextProvider>
+    <AuthProvider>
+      <AppContextProvider>
+        <App />
+      </AppContextProvider>
+    </AuthProvider>
   </BrowserRouter>
 );

@@ -35,30 +35,38 @@ const Doctors = () => {
       <p className="bg-primary text-white md:inline-block p-2 rounded-lg max-w-[300px] hidden ">
         {t("Browse through the doctors specialist.")}
       </p>
-      <button onClick={()=>setFilter(prev => !prev)} className={`mt-10 md:hidden px-6 py-2  text-white rounded-2xl shadow-md  hover:scale-105 transition-all duration-300 ${Fliter ? "bg-primary" : "bg-gray-500"}`}>
+      <button
+        onClick={() => setFilter((prev) => !prev)}
+        className={`mt-10 md:hidden px-6 py-2  text-white rounded-2xl shadow-md  hover:scale-105 transition-all duration-300 ${
+          Fliter ? "bg-primary" : "bg-gray-500"
+        }`}
+      >
         Filter
       </button>
 
-      <div className="flex flex-col sm:flex-row items-start gap-5 mt-5 ">
-        <div className={`  flex-col space-y-4 text-sm text-gray-600 ${Fliter ? "" : "hidden md:flex"}`}>
-          {SpecialtiData.map((key) => (
-            <p
-              key={key}
-              onClick={() =>
-                speciality === `specialities.${key}`
-                  ? navgate("/doctors")
-                  : navgate(`/doctor/specialities.${key}`)
-              }
-              className={`w-[400px] md:min-w-[150px]  sm:w-auto pl-3 py-2 pr-6 border border-gray-300 rounded-lg shadow-sm transition-all cursor-pointer hover:bg-indigo-50 hover:text-black ${
-                speciality === `specialities.${key}`
-                  ? "bg-indigo-100 text-black"
-                  : ""
-              }`}
-            >
-              {t(`specialities.${key}`)}
-            </p>
-          ))}
-        </div>
+      <div className="flex flex-col sm:flex-row  gap-5 mt-5 ">
+      <div
+  className={`w-full sm:w-[300px] ${Fliter ? "flex" : "hidden"} md:flex flex-col space-y-4 text-sm text-gray-600`}
+>
+  {SpecialtiData.map((key) => (
+    <p
+      key={key}
+      onClick={() =>
+        speciality === `specialities.${key}`
+          ? navgate("/doctors")
+          : navgate(`/doctor/specialities.${key}`)
+      }
+      className={`w-full pl-3 py-2 pr-6 border border-gray-300 rounded-lg shadow-sm transition-all cursor-pointer hover:bg-indigo-50 hover:text-black ${
+        speciality === `specialities.${key}`
+          ? "bg-indigo-100 text-black"
+          : ""
+      }`}
+    >
+      {t(`specialities.${key}`)}
+    </p>
+  ))}
+</div>
+
 
         <div className=" w-full gap-4 pt-5 gap-y-6 px-3  sm:px-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
           {filterData.map((item, index) => (

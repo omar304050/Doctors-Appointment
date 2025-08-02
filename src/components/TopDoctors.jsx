@@ -11,7 +11,7 @@ const TopDoctors = () => {
       <h1 className=" text-2xl md:text-3xl font-semibold mb-4">
        {t("Top Doctors to Book")}
       </h1>
-      <p>{t("Simply browse through our extensive list of trusted doctors.")}</p>
+      <p className="text-center">{t("Simply browse through our extensive list of trusted doctors.")}</p>
       <div className=" w-full gap-4 pt-5 gap-y-6 px-3  sm:px-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
         {doctors.slice(0, 10).map((item, index) => (
           <div onClick={()=>{navgate(`/appointment/${item._id}`)}} key={index} className="border border-blue-200 rounded-xl overflow-hidden  hover:translate-y-[-10px] transition-all duration-500 cursor-pointer ">

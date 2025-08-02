@@ -1,24 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../assets/assets";
-
+import { AuthContext } from "../context/AuthContext";
 const Myprofile = () => {
+ const{isLogged} = useContext(AuthContext)
+  const LoginData = JSON.parse(localStorage.getItem("userData"))
+  console.log(isLogged);
+  
   const [userData, setUserData] = useState({
-    name: " omaralalfy",
+    name: LoginData?.name, 
     image: assets.profile_pic,
-    emailid: "omaralalfy30@gmail.com",
-    phone: "01007077186",
+    emailid: LoginData?.email,
+    phone: LoginData?.Phone,
     adress: {
-      line1: "sharea el zaaeem",
+      line1: "sharea el zaaeem",  
       line2: "mostrod",
     },
     gender: "Male",
     dob: "1/1/2001",
   });
 
+
   const [isEdit, setIsEdit] = useState(false);
   return (
     <div className="flex flex-col gap-2 ">
-      <img className="w-36" src={userData.image} alt="" />
+      <img className="w-36 rounded-lg" src={userData.image} alt="" />
 
       {isEdit ? (
         <input
@@ -52,7 +57,7 @@ const Myprofile = () => {
             className="border border-gray-300 text-blue-400 rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         ) : (
-          <p className="text-blue-400">{userData.emailid}</p>
+          <p className="text-blue-400 truncate ">{userData.emailid}</p>
         )}
 
         {/* Phone */}
