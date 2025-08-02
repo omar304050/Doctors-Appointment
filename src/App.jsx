@@ -11,7 +11,7 @@ import Navbar from "./components/Navbar";
 import React, { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Footer from "./components/Footer";
-import SignUp from "./pages/Signup";
+import SignUp from "./pages/SignUp.jsx";
 import toast, { Toaster } from "react-hot-toast";
 import ProtectingRoute from "./components/ProtectingRoute.jsx";
 import { AuthContext } from "./context/AuthContext.jsx";
