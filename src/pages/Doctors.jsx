@@ -78,7 +78,7 @@ const Doctors = () => {
         </div>
 
         <div className=" w-full gap-4 pt-5 gap-y-6 px-3  sm:px-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
-          {filterData.map((item, index) => (
+          {filterData?.map((item, index) => (
             <div
               onClick={() => {
                 navgate(`/appointment/${item._id}`);
