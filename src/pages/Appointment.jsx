@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "../context/AppContext";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useTranslation } from "react-i18next";
 import RelatedDoctors from "../components/RelatedDoctors";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Appointment = () => {
   const { doctors } = useContext(AppContext);
@@ -14,11 +16,13 @@ const Appointment = () => {
 
   const [docSlot, setDocSlot] = useState([]);
   const [slotIndex, setSlotIndex] = useState(0);
-  const [slottime, setSlotTime] = useState([]);
+  const [slottime, setSlotTime] = useState();
+
+  const navigate = useNavigate()
 
 
   const fetchDocInfo = async () => {
-    const foundDoc = doctors.find((doc) => doc._id === docId);
+    const foundDoc = doctors.find((doc) => doc.id === docId);
     setDocInfo(foundDoc);
   };
 
@@ -61,6 +65,38 @@ const Appointment = () => {
       setDocSlot((prev) => [...prev, timeSlots]);
     }
   };
+
+
+  const bookAppointment = () => {
+  if (!docInfo || !slottime) {
+   toast.error("Please select a slot first!");
+    return;
+  }
+
+  const newAppointment = {
+    doctorId: docInfo.id,
+    doctorName: docInfo.name,
+    doctorImage: docInfo.image,
+    doctorAddress: docInfo.address,
+    appointmentTime: slottime
+  };
+
+  axios.post("https://68a095496e38a02c58191e27.mockapi.io/appointments", newAppointment)
+    .then((res) => {
+      console.log("Appointment booked:", res.data);
+      toast.success("Appointment booked successfully!")
+      navigate("/my-appointments")
+    })
+    .catch((err) => {
+      console.error("Booking failed:", err);
+      toast.error("Failed to book appointment." )
+    });
+};
+
+  
+
+
+
 
   useEffect(() => {
     fetchDocInfo();
@@ -131,7 +167,7 @@ const Appointment = () => {
               </p>
             ))}
           </div>
-          <button className="bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6">
+          <button onClick={bookAppointment} className="bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6">
             Book an appointment
           </button>
         </div>

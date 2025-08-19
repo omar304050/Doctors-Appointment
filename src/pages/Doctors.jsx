@@ -81,7 +81,7 @@ const Doctors = () => {
           {filterData?.map((item, index) => (
             <div
               onClick={() => {
-                navgate(`/appointment/${item._id}`);
+                navgate(`/appointment/${item.id}`);
               }}
               key={index}
               className="border border-blue-200 rounded-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 cursor-pointer shadow-sm hover:shadow-md bg-white"
